@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#counter-container {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#click-reset-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#click-btn, #reset-btn{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#reset-btn{
+    background-color: red;
+}
+
+/* #reset-btn{
+    background-color: red;
+} */
+
+
+#click-btn{
+    background-color: blue;
+}
+
+/* #click-btn{
+    background-color: blue;
+} */
