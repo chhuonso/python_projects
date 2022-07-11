@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 400px;
+    height: 600px;
+    margin: 40px auto;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+h2{
+    padding: 20px 0;
+    color: rgb(228, 140, 17);
+    font-size: 23pt;
+}
+
+input, select, textarea{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgb(228, 140, 17);
+    border-radius: 5px;
+    font-size: 12pt;
+}

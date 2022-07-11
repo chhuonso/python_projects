@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #result-container {
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            margin: 40px auto;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            padding: 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        span {
+            color: rgb(228, 140, 17);
+            text-decoration: rgb(255, 255, 255) underline;
+        }
+
+        #back-home{
+            text-align: center;
+        }
+        button{
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="result-container">
+        <h1>Submitted Info</h1>
+        <h2>Full Name: <span>{{session['full_name']}}</span></h2>
+        <h2>Location: <span>{{session['location']}}</span></h2>
+        <h2>Language: <span>{{session['language']}}</span></h2>
+        <h2>Comment: <span>{{session['comment']}}</span></h2>
+    </div>
+</body>
+</html>
