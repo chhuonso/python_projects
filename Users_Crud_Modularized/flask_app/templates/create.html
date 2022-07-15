@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create form</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">  
+</head>
+<body>
+    <nav> 
+        <h1>Create Form</h1>
+        <a href="/" id="create-btn">Home</a>
+    </nav>
+    <form action="/create/submit" method="post">
+        <div>
+            <label for="first_name">First Name:</label><br>
+            <input type="text" name="first_name">
+        </div>
+        <div>
+            <label for="last_name">Last Name:</label><br>
+            <input type="text" name="last_name">
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email">
+        </div>
+        <input type="submit" href="/create/submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">  
+</head>
+<body>
+    <nav> 
+        <h1>All Users</h1>
+        <a href="/create" id="create-btn">Add Users</a>
+    </nav>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Created At</th>
+            <th>Action</th>
+        </tr>
+        {% for user in all_users %}
+        <tr>
+            <td>{{user.first_name}}</td>
+            <td>{{user.last_name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.created_at}}</td>
+            <td><a href="/users/{{user.id}}">Show</a>|<a href="/users/{{user.id}}">Edit</a>|<a href="/users/{{user.id}}/delete">Delete</a></td>
+        </tr>
+        {% endfor%}
+
+    </table>
+</body>
+</html>
