@@ -13,4 +13,4 @@ class Ninja:
     @classmethod
     def create_new_ninja(cls, data):
         query = 'INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojos_id) VALUES (%(first_name)s, %(last_name)s, %(age)s, NOW(), NOW(), %(dojos_id)s)'
-        return connectToMySQL('dojos_and_ninjas').query_db(query,data) 
+        return connectToMySQL('dojos_n_ninjas').query_db(query,data) 
