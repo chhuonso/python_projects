@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(0, 0, 0, 0.494);
+
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    background-color:black;
+    color: white;
+    padding: 30PX;
+    border-radius: 10px;
+}
+
+
+#container{
+    width: 800px;
+    margin: 50px auto;
+}
